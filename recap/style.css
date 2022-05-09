@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: o.5rem 5rem;
+    background-color: black;
+
+}
+#navbar .navbar-brand{
+    font-size: 25px;
+    font-weight: 800;
+    color: rgb(66, 245, 66);
+}
+#navbarSupportedContent a{
+    color: white;
+    border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: rgb(66, 245, 66);
+}
+#navbarSupportedContent button{
+    background-color: rgb(66, 245, 66);
+    width: 5rem;
+    border-radius: 20px;
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#home{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(bg.jfif);
+    background-size: cover;
+    background-position: center;
+}
+#home h1{
+    font-size: 100px;
+    color: white;
+    letter-spacing: 3px;
+    text-shadow: 2px 4px 2px rgba(255,255,255,0.6);
+}
+#home p{
+    font-size: 18px;
+    color: white;
+}
+#home .input-group{
+    width: 40%;
+    height: 45px;
+}
+.signin{
+    background-color: rgb(40, 247, 40);
+    color: white;
+}
+#about{
+    background-image: linear-gradient(
+        to right top,
+        #2be95c,
+        #22ec50,
+        #18f043,
+        #0df332,
+        #03f617 100%
+      );
+}
+#about h1{
+    margin-top: 7rem;
+    font-size: 50px;
+    font-weight: 800;
+    color: #02252b;
+}
+#about p{
+    color: #02252b;
+}
+#product img {
+    width: 200px;
+    height: 200px;
+  }
+#product{
+    background-color: aliceblue;
+}
+#product h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+.card{
+    width: 250px;
+    height: 300px;
+    box-shadow: 15px 20px 20px rgba(0,0,0,.3),
+    inset 4px 4px 10px white;
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 60px;
+}
+.card:hover{
+    box-shadow: inset 15px 20px 20px rgba(0,0,0,.3),
+     4px 4px 10px white;
+     transition: .2s;
+
+}
+#contact img{
+    height: 100%;
+}
+.box{
+    width: 80%;
+    margin-top: 10px;
+}
+#contact input{
+    margin: 10px 0px;
+}
+#contact textarea{
+    margin: 10px 0px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 3px;
+}
+@media (max-width:768px){
+    footer{
+        visibility: hidden;
+    }
+    #home h1{
+        font-size: 50px;
+        text-align: center;
+    }
+    #home p{
+        text-align: center;
+    }
+    #home .input-group{
+        width: 90%;
+        height: 50px;
+    }
+}
